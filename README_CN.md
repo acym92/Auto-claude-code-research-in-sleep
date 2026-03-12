@@ -1,4 +1,4 @@
-# Auto-claude-code-research-in-sleep
+# Auto-claude-code-research-in-sleep (ARIS)
 
 [English](README.md) | 中文版
 
