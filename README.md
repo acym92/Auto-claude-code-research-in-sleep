@@ -36,7 +36,7 @@ claude
 > /idea-discovery "your research direction"  # Workflow 1: literature → brainstorm → validate
 > /auto-review-loop                          # Workflow 2: review → fix → re-review overnight
 > /paper-writing "NARRATIVE_REPORT.md"       # Workflow 3: narrative → polished PDF
-> /research-pipeline "your research direction"  # Full pipeline: Workflow 1 → 2 end-to-end
+> /research-pipeline "your research direction"  # Full pipeline: Workflow 1 → 2 → 3 end-to-end
 ```
 
 See [full setup guide](#%EF%B8%8F-setup) for details and [alternative model combinations](#-alternative-model-combinations) if you don't have Claude/OpenAI API.
@@ -305,7 +305,7 @@ All three PDFs preserved for comparison: `main_round0_original.pdf`, `main_round
 | 🚀 [`run-experiment`](skills/run-experiment/SKILL.md) | Deploy experiments to local (MPS/CUDA) or remote GPU servers | No |
 | 🎨 [`pixel-art`](skills/pixel-art/SKILL.md) | Generate pixel art SVG illustrations for READMEs, docs, or slides | No |
 | 🔭 [`idea-discovery`](skills/idea-discovery/SKILL.md) | **Workflow 1 pipeline**: research-lit → idea-creator → novelty-check → research-review | Yes |
-| 🏗️ [`research-pipeline`](skills/research-pipeline/SKILL.md) | **Full pipeline**: Workflow 1 → implement → Workflow 2, from direction to submission | Yes |
+| 🏗️ [`research-pipeline`](skills/research-pipeline/SKILL.md) | **Full pipeline**: Workflow 1 → implement → Workflow 2 → Workflow 3, from direction to submission | Yes |
 | 📐 [`paper-plan`](skills/paper-plan/SKILL.md) | Generate paper outline with claims-evidence matrix, figure plan, and citation scaffolding | Yes |
 | 📊 [`paper-figure`](skills/paper-figure/SKILL.md) | Publication-quality matplotlib/seaborn plots from experiment data, with LaTeX snippets | Optional |
 | ✍️ [`paper-write`](skills/paper-write/SKILL.md) | Section-by-section LaTeX generation with ICLR/NeurIPS/ICML templates | Yes |
@@ -358,7 +358,7 @@ cp -r skills/research-lit ~/.claude/skills/
 > /paper-compile "paper/"                            # just compile
 
 # Full Pipeline
-> /research-pipeline "your research direction"       # Workflow 1 → 2 end-to-end
+> /research-pipeline "your research direction"       # Workflow 1 → 2 → 3 end-to-end
 
 # Supporting Skills
 > /run-experiment train.py --lr 1e-4 --epochs 100

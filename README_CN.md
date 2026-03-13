@@ -36,7 +36,7 @@ claude
 > /idea-discovery "你的研究方向"              # 工作流 1：文献调研 → 头脑风暴 → 验证
 > /auto-review-loop                          # 工作流 2：审稿 → 修复 → 再审，一夜完成
 > /paper-writing "NARRATIVE_REPORT.md"       # 工作流 3：研究叙事 → 精修 PDF
-> /research-pipeline "你的研究方向"            # 全流程：工作流 1 → 2 端到端
+> /research-pipeline "你的研究方向"            # 全流程：工作流 1 → 2 → 3 端到端
 ```
 
 详见[完整安装指南](#%EF%B8%8F-安装)和[替代模型组合](#-替代模型组合)（无需 Claude/OpenAI API）。
@@ -247,7 +247,7 @@ NARRATIVE_REPORT.md ──► /paper-plan ──► /paper-figure ──► /pap
 | 🚀 [`run-experiment`](skills/run-experiment/SKILL.md) | 部署实验到本地（MPS/CUDA）或远程 GPU 服务器 | 否 |
 | 🎨 [`pixel-art`](skills/pixel-art/SKILL.md) | 生成像素风 SVG 插图，用于 README、文档或幻灯片 | 否 |
 | 🔭 [`idea-discovery`](skills/idea-discovery/SKILL.md) | **工作流 1 全流程**：research-lit → idea-creator → novelty-check → research-review | 是 |
-| 🏗️ [`research-pipeline`](skills/research-pipeline/SKILL.md) | **完整流水线**：工作流 1 → 实现 → 工作流 2，从方向到投稿 | 是 |
+| 🏗️ [`research-pipeline`](skills/research-pipeline/SKILL.md) | **完整流水线**：工作流 1 → 实现 → 工作流 2 → 工作流 3，从方向到投稿 | 是 |
 | 📐 [`paper-plan`](skills/paper-plan/SKILL.md) | 生成论文大纲：claims-evidence 矩阵、图表计划、引用规划 | 是 |
 | 📊 [`paper-figure`](skills/paper-figure/SKILL.md) | 从实验数据生成出版级 matplotlib/seaborn 图表，含 LaTeX 插入代码 | 可选 |
 | ✍️ [`paper-write`](skills/paper-write/SKILL.md) | 逐 section LaTeX 生成，支持 ICLR/NeurIPS/ICML 模板 | 是 |
